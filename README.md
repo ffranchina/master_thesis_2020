@@ -37,9 +37,9 @@ Each experimental setup is composed of:
 ## Quick start
 Once the repository has been cloned, create a python3 _virtual environment_ and install the specified requirements.
 ```
-virtualenv -p python3 venv
+python3 -m venv venv
 source venv/bin/activate
-pip install -r src/requirements.txt
+pip install -r requirements.txt
 ```
 Once the environment is ready, it's possible to launch the training of a specific model:
 ```
