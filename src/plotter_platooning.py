@@ -12,8 +12,7 @@ import numpy as np
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-parser.add_argument("-d", "--dir", dest="dirname",
-                    help="model's directory")
+parser.add_argument("dirname", help="model's directory")
 parser.add_argument("--triplots", default=False, action="store_true" , help="Generate triplots")
 parser.add_argument("--scatter", default=False, action="store_true" , help="Generate scatterplot")
 parser.add_argument("--hist", default=False, action="store_true" , help="Generate histograms")

@@ -51,7 +51,7 @@ class Follower:
         self.car.update(acc, dt)
 
 parser = ArgumentParser()
-parser.add_argument("-d", "--dir", dest="dirname", help="model's directory")
+parser.add_argument("dirname", help="model's directory")
 parser.add_argument("-n", "--nfollowers", dest="nfollowers", type=int, default=1, help="number of followers")
 parser.add_argument("--dark", default=False, action="store_true" , help="Use dark theme")
 args = parser.parse_args()

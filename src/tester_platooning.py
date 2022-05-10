@@ -12,8 +12,7 @@ import numpy as np
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-parser.add_argument("-d", "--dir", dest="dirname",
-                    help="model's directory")
+parser.add_argument("dirname", help="model's directory")
 parser.add_argument("-r", "--repetitions", dest="repetitions", type=int, default=1,
                     help="simulation repetions")
 args = parser.parse_args()
