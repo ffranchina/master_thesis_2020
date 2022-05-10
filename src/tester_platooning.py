@@ -73,9 +73,9 @@ def run(mode=None):
         sim_ag_acc.append(def_input)
         sim_env_acc.append(atk_input)
         sim_t.append(t)
-        sim_ag_pos.append(physical_model.agent.position)
-        sim_env_pos.append(physical_model.environment.l_position)
-        sim_ag_dist.append(physical_model.agent.distance)
+        sim_ag_pos.append(physical_model.agent.position.numpy())
+        sim_env_pos.append(physical_model.environment.l_position.numpy())
+        sim_ag_dist.append(physical_model.agent.distance.numpy())
 
         t += dt
         

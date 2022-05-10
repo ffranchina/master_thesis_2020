@@ -59,7 +59,7 @@ class Environment:
 
     def get_fn(self, x):
         """ Computes the value of the road's height in a given point """
-        derivative = np.array([self.get_steepness(i) for i in x])
+        derivative = np.array([self.get_steepness(i).numpy() for i in x])
         return np.cumsum(derivative) * self._dx
 
     def update(self, parameters, dt):

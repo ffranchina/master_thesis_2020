@@ -72,8 +72,8 @@ def run(mode=None):
 
         sim_ag_acc.append(def_input)
         sim_t.append(t)
-        sim_ag_pos.append(physical_model.agent.position)
-        sim_ag_vel.append(physical_model.agent.velocity)
+        sim_ag_pos.append(physical_model.agent.position.numpy())
+        sim_ag_vel.append(physical_model.agent.velocity.numpy())
 
         t += dt
         
